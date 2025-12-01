@@ -92,10 +92,19 @@ html {
 }
 </style>
 
+
 <style>
-    /* Hide past rows initially */
+    /* Hide past rows */
     .past-row {
       display: none;
+    }
+
+    /* Subsection style */
+    #togglePast {
+      font-size: 0.95rem;
+      font-style: italic;
+      color: #555;
+      cursor: pointer; /* optional: shows hand cursor */
     }
   </style>
 
@@ -348,18 +357,15 @@ Any relevant supporting documents, such as your CV, transcript, research stateme
 	      <td class="year">06&ndash;10 July 2026</td>
 	      <td class="title">   <a href="https://www.icts.res.in/discussion-meeting/egc">Enumerative geometry and categorification</a>, ICTS, Bangalore
 		  </tr>
-		<br>
+		
 			
 		<tr>
-        <td colspan="3">
-            <span id="togglePast"
-                  style="cursor:pointer; font-weight:bold;">
-                Past Events ▼
-            </span>
-        </td>
-      </tr>
+  		<td colspan="3">
+      	<span id="togglePast">Past Events ▼</span>
+  		</td>
+		</tr>
 
-		<br>
+		
 			  
 		<tr class="past-row">
 	      <td class="year">13&ndash;17 Mar 2023</td>
@@ -469,6 +475,7 @@ document.getElementById("togglePast").addEventListener("click", function () {
 
 </body>
 </html>
+
 
 
 
